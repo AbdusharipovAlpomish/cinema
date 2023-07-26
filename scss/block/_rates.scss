@@ -1,0 +1,281 @@
+.rates {
+  padding: 26px 0 144px 0;
+}
+
+.rates_block {
+  text-align: center;
+}
+
+.rates_title {
+  font-weight: 800;
+  font-size: 43px;
+  line-height: 54px;
+  color: $color3;
+  margin-bottom: 8px;
+}
+
+.rates_choice {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: .2px;
+  color: $color4;
+  margin-bottom: 26px;
+}
+
+.rates_checkbox__block {
+  max-width: 236px;
+  width: 100%;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.rates_checkbox {
+  appearance: none;
+  width: 100%;
+  height: 48px;
+  border-radius: 24px;
+  background-color: $color5;
+  outline: none;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.rates_checkbox::after {
+  content: "Disney Bundle";
+}
+
+.rates_checkbox::before {
+  content: "Disney+";
+}
+
+.rates_checkbox::before,
+.rates_checkbox::after {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: $color3;
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.rates_checkbox::after {
+  left: 21px;
+}
+
+.rates_checkbox::before {
+  right: 21px;
+}
+
+.rates_label {
+  width: 135px;
+  height: 38px;
+  border-radius: 21px;
+  background-color: $color2;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 5px;
+  z-index: 1;
+  transition: all .4s ease;
+}
+
+.rates_checkbox:not(:checked)+.rates_label {
+  width: 91px;
+  left: 139px;
+}
+
+.rates_block {
+  margin-bottom: 24px;
+}
+
+.rates_card__block {
+  margin-bottom: 15px;
+}
+
+.rates_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.rates_item {
+  max-width: 380px;
+  width: 100%;
+  padding: 41px 45px;
+  border: 1px solid $color4;
+}
+
+.rates_item:nth-child(1) .rates_content {
+  margin-bottom: 114px;
+}
+
+.rates_item:nth-child(2) .rates_content {
+  margin-bottom: 54px;
+}
+
+.rates_item:nth-child(3) .rates_content {
+  margin-bottom: 24px;
+}
+
+.rates_content::before {
+  margin-bottom: 27px;
+}
+
+.rates_item:nth-child(1) .rates_content::before {
+  content: "";
+  max-width: 173px;
+  width: 100%;
+  height: 40px;
+  display: inline-block;
+  background-image: url("../../img/get-them-both.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rates_item:nth-child(2) .rates_content::before {
+  content: "";
+  max-width: 172.5px;
+  width: 100%;
+  height: 40px;
+  display: inline-block;
+  background-image: url("../../img/get-all-three.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rates_item:nth-child(3) .rates_content::before {
+  content: "";
+  max-width: 172.5px;
+  width: 100%;
+  height: 40px;
+  display: inline-block;
+  background-image: url("../../img/get-all-three.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rates_title__plan {
+  font-weight: 800;
+  font-size: 27px;
+  line-height: 38px;
+  color: $color3;
+  margin-bottom: 16px;
+}
+
+.rates_title__span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  display: block;
+}
+
+.rates_plan__box {
+  display: flex;
+
+  &::before {
+    content: "";
+    width: 18px;
+    height: 15px;
+    display: inline-block;
+    background-image: url("../../img/checked.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-grow: 1;
+    margin-right: 9.5px;
+    margin-top: 3.25px;
+  }
+}
+
+.rates_content .rates_plan__box:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.rates_descriptions__plan {
+  max-width: 250px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: .2px;
+  color: $color4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rates_price {
+  padding: 16px 0;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 38px;
+  color: $color3;
+}
+
+.rates_price__span {
+  font-weight: 400;
+  font-size: 16px;
+  color: $color4;
+}
+
+.rates_btn {
+  padding: 18.5px 0 16.5px 0;
+  width: 100%;
+  background-color: $color2;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: $color3;
+}
+
+.rates_text {
+  max-width: 234px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: .2px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: $color4;
+}
+
+.rates_text__span {
+  color: $color3;
+}
+
+@media screen and (max-width: 450px) {
+  .rates_title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .rates_choice {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .rates_title__plan {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .rates_title__span {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .rates_content::before {
+    margin-bottom: 16px;
+  }
+}

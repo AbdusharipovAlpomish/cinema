@@ -1,0 +1,43 @@
+.collection {
+  padding: 53px 0 29px 0;
+}
+
+.collection_block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.collection_link__block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  text-align: center;
+}
+
+.collection_link:nth-child(1) {
+  border-bottom: 5px solid $color3;
+}
+
+.collection_link {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $color3;
+}
+
+.collection_movie__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.collection_movie {
+  display: inline-block;
+  max-width: 410px;
+  max-height: 246px;
+}

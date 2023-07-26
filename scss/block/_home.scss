@@ -1,0 +1,128 @@
+.home {
+  padding: 139px 0;
+  background-image: url("../../img/home_background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home_block {
+  max-width: 639px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  color: $color4;
+}
+
+.home_block__btn {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 49px;
+}
+
+.home_box__btn {
+  max-width: 307px;
+  width: 100%;
+  padding-top: 117px;
+  background-repeat: no-repeat;
+  background-position: 0 28.8px;
+  background-size: 100%;
+
+  &:nth-child(1) {
+    background-image: url("../../img/get-them-both.png");
+  }
+
+  &:nth-child(2) {
+    background-image: url("../../img/get-all-three.png");
+  }
+
+  &:nth-child(2) .home_btn {
+    padding: 19px 0 18px 0;
+  }
+}
+
+.home_btn {
+  width: 100%;
+  background-color: $color2;
+  padding: 19px 0 18px 0;
+  border: 2px solid $color2;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: $color3;
+}
+
+.home_btn:hover {
+  background-color: $color7;
+}
+
+.home_streaming {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: .2px;
+}
+
+.home_apply {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: .2px;
+  padding-bottom: 94px;
+  background: url("../../img/company.png") no-repeat center;
+}
+
+.home_span {
+  color: $color3;
+}
+
+.home_options {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: .2px;
+}
+
+@media screen and (max-width: 680px) {
+  .home {
+    background-size: cover;
+    padding: 88px 0;
+  }
+
+  .home_block__btn {
+    flex-direction: column;
+  }
+
+  .home_box__btn {
+    padding-top: 93px;
+    background-position: top 0 left 0;
+  }
+
+  .home_box__btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home_apply {
+    background-image: none;
+    padding: 0;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .home {
+    padding: 100px 0;
+  }
+
+  .home_btn {
+    font-size: 15px;
+  }
+
+  .home_box__btn {
+    padding-top: 83px;
+  }
+}

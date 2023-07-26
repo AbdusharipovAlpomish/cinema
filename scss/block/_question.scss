@@ -1,0 +1,66 @@
+.question {
+  padding: 77px 0 80px 0;
+  color: $color3;
+}
+
+.question_title {
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.question_checkbox__box {
+  max-width: 100%;
+  background-color: #13151D;
+  padding: 25px;
+}
+
+.question_label {
+  max-width: 1280px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 16px;
+}
+
+.question_label::after {
+  content: "+";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 30px;
+  display: block;
+}
+
+.question_checkbox__box:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.question_checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.question_checkbox:checked ~ .question_label::after {
+  content: "";
+  width: 23px;
+  height: 3px;
+  background-color: $color3;
+}
+
+.question_checkbox:checked ~ .question_content {
+  display: block;
+}
+
+.question_content {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  display: none;
+  margin-top: 16px;
+}

@@ -1,0 +1,58 @@
+.bundle {
+  padding: 80px 0;
+}
+
+.bundle_block {
+  background-image: url("../../img/bundle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 104px 0 129px 0;
+}
+
+.bundle_content {
+  max-width: 591px;
+  margin-left: auto;
+  padding: 0 20px;
+}
+
+.bundle_text {
+  max-width: 541px;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: .2px;
+  color: $color3;
+  margin-bottom: 25px;
+}
+
+.bundle_btn {
+  width: 100%;
+  padding: 25px 0;
+  background-color: $color2;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 29px;
+  color: $color3;
+}
+
+.bundle_link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: .2px;
+  color: $color3;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 650px) {
+  .bundle_content {
+    text-align: center;
+  }
+
+  .bundle_text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
